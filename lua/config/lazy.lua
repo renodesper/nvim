@@ -25,7 +25,6 @@ require("lazy").setup({
       },
     },
     { import = "plugins" },
-    { import = "lazyvim.plugins.extras.lazyrc" },
   },
   defaults = {
     lazy = false,

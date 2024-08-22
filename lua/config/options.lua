@@ -3,9 +3,7 @@ vim.g.mapleader = " "
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
-
 vim.opt.number = true
-
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
@@ -36,5 +34,6 @@ vim.opt.mouse = ""
 vim.opt.formatoptions:append({ "r" })
 
 -- Set executable path for programming languages
-vim.g.python3_host_prog = "/Users/bosan/.asdf/shims/python3.12"
-vim.g.ruby_host_prog = ""
+vim.g.python3_host_prog = "/Users/bosan/.asdf/installs/python/3.12-dev-neovim/env/bin/python"
+vim.g.ruby_host_prog = "/Users/bosan/.asdf/installs/ruby/3.3.0/bin/ruby"
+vim.g.lua_host_prog = "/Users/bosan/.asdf/installs/lua/5.1.5/bin/lua"

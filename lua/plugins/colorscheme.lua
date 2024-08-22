@@ -17,4 +17,11 @@ return {
       -- vim.cmd.colorscheme("catppuccin-macchiato")
     end,
   },
+  {
+    "folke/tokyonight.nvim",
+    lazy = true,
+    opts = {
+      style = "storm"
+    },
+  },
 }

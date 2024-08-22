@@ -31,14 +31,14 @@ return {
             return vim.fn.getcwd()
           end,
         },
-        ["neotest-go"] = {
-          experimental = {
-            test_table = true,
-          },
-          args = { "-count=1", "-timeout=60s" },
-          recursive_run = true
-        },
-        ["neotest-phpunit"] = {},
+        -- ["neotest-go"] = {
+        --   experimental = {
+        --     test_table = true,
+        --   },
+        --   args = { "-count=1", "-timeout=60s" },
+        --   recursive_run = true
+        -- },
+        -- ["neotest-phpunit"] = {},
       },
       status = { virtual_text = true },
       output = { open_on_run = true },
