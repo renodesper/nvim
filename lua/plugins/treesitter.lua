@@ -1,7 +1,6 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    tag = "v0.9.2",
     opts = {
       ensure_installed = {
         "bash",
@@ -17,7 +16,6 @@ return {
         "gosum",
         "gowork",
         "graphql",
-        "helm",
         "http",
         "javascript",
         "json",

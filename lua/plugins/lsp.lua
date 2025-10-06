@@ -1,18 +1,18 @@
 return {
   -- tools
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
         -- LSP
         "bash-language-server",
-        "buf-language-server",
+        "buf",
         "css-lsp",
         "docker-compose-language-service",
         "dockerfile-language-server",
         "eslint-lsp",
         "gopls",
-        "helm-ls",
+        -- "helm-ls",
         "html-lsp",
         "impl",
         "intelephense",
@@ -21,7 +21,7 @@ return {
         "lua-language-server",
         "marksman",
         "pyright",
-        "ruff-lsp",
+        "ruff",
         "tailwindcss-language-server",
         "taplo",
         "terraform-ls",
@@ -47,6 +47,7 @@ return {
         "gofumpt",
         "goimports",
         "gomodifytags",
+
         -- "markdownlint",
         "prettier",
         "shfmt",
@@ -186,12 +187,22 @@ return {
     "nvim-cmp",
     dependencies = { "hrsh7th/cmp-emoji" },
     opts = function(_, opts)
+      -- luasnip
       opts.snippet = {
         expand = function(args)
           require("luasnip").lsp_expand(args.body)
         end,
       }
       table.insert(opts.sources, { name = "luasnip" })
+
+      -- supermaven
+      if vim.g.ai_cmp then
+        table.insert(opts.sources, 1, {
+          name = "supermaven",
+          group_index = 1,
+          priority = 100,
+        })
+      end
     end,
   },
 }

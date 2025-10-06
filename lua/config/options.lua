@@ -34,6 +34,6 @@ vim.opt.mouse = ""
 vim.opt.formatoptions:append({ "r" })
 
 -- Set executable path for programming languages
-vim.g.python3_host_prog = "/Users/bosan/.asdf/installs/python/3.12-dev-neovim/env/bin/python"
-vim.g.ruby_host_prog = "/Users/bosan/.asdf/installs/ruby/3.3.0/bin/ruby"
-vim.g.lua_host_prog = "/Users/bosan/.asdf/installs/lua/5.1.5/bin/lua"
+vim.g.python3_host_prog = "/Users/bosan/.local/share/mise/installs/python/3.12-dev/bin/python"
+vim.g.ruby_host_prog = "/Users/bosan/.local/share/mise/installs/ruby/3.3.0/bin/ruby"
+vim.g.lua_host_prog = "/Users/bosan/.local/share/mise/installs/lua/5.1.5/bin/lua"
